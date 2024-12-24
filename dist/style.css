@@ -17,15 +17,16 @@
   }
 }
 
-body {
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 .card {
   padding: 10px;
   height: 493px;
   display: flex;
-
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
