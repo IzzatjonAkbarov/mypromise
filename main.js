@@ -63,7 +63,7 @@ function getdataFunc(data) {
                   <p>${element.rating.rate} <i class="fa-solid fa-star text-yellow-500"></i></p>
                 </div>
                 <div class="flex items-center gap-3">
-                  <p class="font-bold">rank:</p>
+                  <p class="font-bold">price:</p>
                   <p>${element.price} $</p>
                 </div>
   
