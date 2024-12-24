@@ -1,0 +1,30 @@
+// get malumot oladi
+// put malumot ozgartiradi
+// post malumot malumot qoshadi
+// delete malumot oladi
+const rewuest = new XMLHttpRequest();
+rewuest.open(
+  "GET",
+  "https://67172d90b910c6a6e026d725.mockapi.io/mesage/telgram"
+);
+rewuest.send();
+rewuest.addEventListener("readystatechange", () => {
+  if (rewuest.readyState === 4) {
+    console.log(JSON.parse(rewuest.responseText));
+  }
+});
+
+const myPromise = new Promise((resolve, reject) => {
+  const success = true;
+  if (success) {
+    resolve("vazifa muvaffaqiyatli bajarildi");
+  } else {
+    reject("xatolik");
+  }
+});
+
+myPromise
+  .then((data) => console.log(data))
+  .catch((error) => {
+    error;
+  });

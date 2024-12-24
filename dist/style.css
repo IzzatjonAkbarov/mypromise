@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 1500px) {
+  .container1 {
+    width: 97%;
+    margin: auto;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+  padding: 10px;
+  height: 493px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+.multi-line {
+  display: -webkit-box; /* Enable multi-line truncation */
+  -webkit-line-clamp: 3; /* Limit to 2 lines */
+  -webkit-box-orient: vertical; /* Vertical text alignment */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis */
+}
+.image {
+  height: 200px;
+}
