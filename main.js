@@ -39,7 +39,7 @@ function getdataFunc(data) {
               <img
                 class="w-[80%] mx-auto image"
                 src="${element.image}"
-                alt="" />
+                alt="error" />
               <p
                 class="category p-2 bg-[#5b5959] rounded-[10px] text-white w-fit text-[12px] absolute top-1">
                 ${element.category}
@@ -58,25 +58,30 @@ function getdataFunc(data) {
                 </p>
               </div>
               <div>
+               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                   <p class="font-bold">rank:</p>
-                  <p>${element.rating.rate} <i class="fa-solid fa-star text-yellow-500"></i></p>
+                  <p>${
+                    element.rating.rate
+                  } <i class="fa-solid fa-star text-yellow-500"></i></p>
                 </div>
+                <div class="flex items-center gap-3">
+                  <p class="font-bold">have :</p>
+                  <p>${element.rating.count}</p>
+                </div></div>
                 <div class="flex items-center gap-3">
                   <p class="font-bold">price:</p>
                   <p>${element.price} $</p>
                 </div>
-  
-                <div class="flex items-center gap-3">
-                  <p class="font-bold">have in store:</p>
-                  <p>${element.rating.count}</p>
-                </div>
+  <div class="font-bold"> discount: ${Math.round(
+    (element.price / 100) * 10
+  )}%</div>
               </div>
             </div>
             <div class="flex items-center justify-between gap-2">
               <button
                 class="p-3 rounded-[10px] w-[100%] border border-black hover:bg-black hover:text-white active:scale-[0.9] transition-all">
-                savatga
+                More Items
               </button>
               <button><i class="fa-solid fa-cart-shopping text-[20px] p-3 rounded-[10px] w-[100%] border border-black hover:bg-black hover:text-white active:scale-[0.9] transition-all"></i></button>
             </div>

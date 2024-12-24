@@ -47,6 +47,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #ccc;
 }
 .multi-line {
   display: -webkit-box; /* Enable multi-line truncation */
