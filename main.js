@@ -8,7 +8,7 @@
 // });
 
 const mycard = new XMLHttpRequest();
-mycard.open("GET", "https://fakestoreapi.com/products");
+mycard.open("GET", "./db.json");
 mycard.send();
 function getdata() {
   return new Promise((res, rej) => {
