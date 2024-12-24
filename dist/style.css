@@ -15,12 +15,30 @@
     width: 97%;
     margin: auto;
   }
+  .image {
+    height: auto;
+    width: auto;
+  }
 }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+}
+@media (max-width: 1130px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 810px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 .card {
   padding: 10px;
@@ -32,7 +50,7 @@
 }
 .multi-line {
   display: -webkit-box; /* Enable multi-line truncation */
-  -webkit-line-clamp: 3; /* Limit to 2 lines */
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
   -webkit-box-orient: vertical; /* Vertical text alignment */
   overflow: hidden; /* Hide overflowing text */
   text-overflow: ellipsis; /* Add ellipsis */
